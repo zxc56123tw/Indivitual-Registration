@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indivitual Registration</title>
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <h1>個人報名Indivitual Registration</h1>
+    <form action="">
+      <fieldset>
+        <legend>基本資料／Basic Information</legend>
+        <label for="name">姓名 / Name <span>*</span></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="請輸入姓名"
+        />
+        <br />
+        <!-- 不確定這邊用p還是label -->
+        <span>性別 / Gender</span>
+        <input type="radio" name="gender" id="men" value="men" />
+        <label for="men">男性</label>
+        <input type="radio" name="gender" id="women" value="women" />
+        <label for="women">女性</label>
+        <br />
+        <span>國籍 / Nationality</span>
+        <input type="radio" name="nationality" id="ROC" value="ROC" />
+        <label for="ROC">本國國籍 / ROC Citizen</label>
+        <input
+          type="radio"
+          name="nationality"
+          id="Non-Citizens"
+          value="Non-Citizens"
+        />
+        <label for="Non-Citizens">Non-Citizens</label>
+        <br />
+        <label for="IDnumber">身分證號 / ID Number*</label>
+        <input
+          type="text"
+          name="IDnumber"
+          id="IDnumber"
+          placeholder="身分證號或護照號碼"
+        />
+
+        <!-- //這個還不會，待討論
+        <label for="birth">出生日期 / Date Of Birth</label>
+        <select name="birth-year" id="year">年 Year</select
+            > -->
+        <br />
+        <label for="Email">電子信箱／Email*</label>
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="example@mail.com"
+        />
+        <br />
+        <span>聯絡電話 / Contact Number</span>
+        <label for="mobile">手機 / Mobile</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="0922053012" />
+        <label for="home">住家 / Home</label>
+        <input type="tel" name="home" id="home" placeholder="0225855659" />
+        <label for="office">公司 / Office</label>
+        <input type="tel" name="office" id="office" />
+        <br />
+        <label for="address">通訊地址 / Mailing Address</label>
+        //這邊還不會寫
+        <br />
+        <label for="em-contact"
+          >緊急聯絡人姓名 / Name of Emergency Contact</label
+        >
+        <input type="text" name="em-contact" id="em-contact" />
+        <label for="em-contact-relation">關係 / Relationship</label>
+        <input
+          type="text"
+          name="em-contact-relation"
+          id="em-contact-relation"
+        />
+        <label for="em-contact-tel">電話 / Phone</label>
+        <input type="rel" name="em-contact-tel" id="em-contact-tel" />
+      </fieldset>
+
+      <fieldset>
+        <legend>競賽項目資料 / Race Category Information</legend>
+      </fieldset>
+
+      <fieldset>
+        <legend>報到方式(二擇一) / Check-in Method</legend>
+      </fieldset>
+
+      <fieldset>
+        <legend>其他 / Others</legend>
+      </fieldset>
+    </form>
+  </body>
+</html>

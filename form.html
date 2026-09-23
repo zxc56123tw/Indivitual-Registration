@@ -61,21 +61,21 @@
           <label>出生日期 / Date Of Birth</label>
           <select name="birth-year" id="birth-year">
             <option value="birth-year">年 Year</option>
-            <option value="birth-year">2026</option>
-            <option value="birth-year">2025</option>
-            <option value="birth-year">2024</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
           </select>
           <select name="birth-month" id="birth-month">
             <option value="birth-month">月 Month</option>
-            <option value="birth-month">1月</option>
-            <option value="birth-month">2月</option>
-            <option value="birth-month">3月</option>
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
           </select>
           <select name="birth-day" id="birth-day">
             <option value="">日 Day</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
         </div>
 
@@ -91,7 +91,7 @@
         </div>
 
         <div>
-          <label>聯絡電話 / Contact Number*</label>
+          <label>聯絡電話 / Contact Number<span>*</span></label>
           <label for="mobile">手機 / Mobile</label>
           <input
             type="tel"
@@ -99,6 +99,7 @@
             id="mobile"
             placeholder="0922053012"
             pattern="09[0-9]{8}"
+            required
           />
           <label for="home">住家 / Home</label>
           <input
@@ -107,6 +108,7 @@
             id="home"
             placeholder="0225855659"
             pattern="[0][2-8][0-9]{7,8}"
+            required
           />
           <label for="office">公司 / Office</label>
           <input
@@ -114,6 +116,7 @@
             name="office"
             id="office"
             pattern="[0][2-8][0-9]{7,8}"
+            required
           />
         </div>
 
@@ -163,7 +166,7 @@
         <legend>競賽項目資料 / Race Category Information</legend>
 
         <div>
-          <input type="checkbox" />
+          <input type="checkbox" id="9km-clothes" value="9km-clothes" />
           <label for="9km-clothes">9KM（NTD 800）</label>
 
           <label for="9km-clothes-size"></label>
@@ -176,7 +179,7 @@
         </div>
 
         <div>
-          <input type="checkbox" />
+          <input type="checkbox" id="3km-clothes" value="3km-clothes" />
           <label for="3km-clothes">3KM（NTD 650）</label>
 
           <label for="3km-clothes-size"></label>
@@ -196,18 +199,20 @@
           <label>郵寄代理報到 / Postal delivery check-in</label>
           <input
             type="radio"
-            name="delivery-checkin-yes"
+            name="delivery-checkin"
             id="delivery-checkin-yes"
+            value="yes"
           />
-          <label for="delivery-checkin-yes" value="yes"
+          <label for="delivery-checkin-yes"
             >是 / Y（需額外付費，限台灣本島）</label
           >
           <input
             type="radio"
-            name="delivery-checkin-no"
+            name="delivery-checkin"
             id="delivery-checkin-no"
+            value="no"
           />
-          <label for="delivery-checkin-no" value="no">否 / N</label>
+          <label for="delivery-checkin-no">否 / N</label>
         </div>
 
         <div>
@@ -247,7 +252,7 @@
           <input type="file" />
         </div>
       </fieldset>
-      <div>
+      <div class="div-top">
         <input type="submit" value="送出報名" class="submit-btn" />
         <input type="reset" value="清除重填" class="reset-btn" />
       </div>
